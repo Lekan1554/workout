@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #efefef; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  margin: 1.3rem 0; }
+
+p {
+  line-height: inherit;
+  margin: 1.3rem 0; }
+
+ul {
+  list-style-type: none; }
+
+.container {
+  padding: 0 7rem; }
+
+.h1 {
+  font-size: 5rem; }
+
+.h2 {
+  font-size: 4rem; }
+
+.h3 {
+  font-size: 3rem; }
+
+.h4 {
+  font-size: 2rem; }
+
+.h5 {
+  font-size: 1rem; }
+
+.img-resp {
+  width: 100%;
+  height: auto; }
+
+.btn,
+a:link.btn,
+button.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  background-color: #14143a;
+  color: white; }
+  .btn:focus,
+  a:link.btn:focus,
+  button.btn:focus {
+    outline: none; }
+  .btn--round,
+  a:link.btn--round,
+  button.btn--round {
+    border-radius: .4rem; }
+  .btn--outline-round,
+  a:link.btn--outline-round,
+  button.btn--outline-round {
+    border: 0.5rem solid red; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.card {
+  padding: 1.5rem;
+  display: inline-block;
+  position: relative;
+  max-width: 30rem;
+  max-height: 30rem; }
+  .card__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card__icon-title {
+    color: inherit;
+    font-weight: 700;
+    color: #efefef; }
+  .card__content {
+    text-align: center;
+    color: #d8d8d8e3; }
+  .card-img {
+    max-width: 30rem;
+    max-height: 30rem;
+    position: relative; }
+    .card-img__caption {
+      position: absolute;
+      bottom: 1rem;
+      text-align: center;
+      padding: 1rem 1rem;
+      background-color: #14143a;
+      color: white;
+      font-weight: 700;
+      width: 70%;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.banner {
+  min-height: 80vh;
+  background-image: linear-gradient(to right, #a75c6871, #a8080870), url(../img/ban1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  z-index: 1; }
+
+.nav {
+  display: flex;
+  width: 60%;
+  padding: 2rem;
+  gap: 1.5rem;
+  position: relative; }
+  .nav__link {
+    text-decoration: none;
+    color: black; }
+  .nav__caption {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    color: #d8d8d8e3; }
+    .nav__caption span.h3,
+    .nav__caption span.h1 {
+      display: block;
+      letter-spacing: 0.7rem; }
+
+.yoga {
+  min-height: 75vh;
+  padding: 3rem 0 15rem 0;
+  background-color: #efefef; }
+  .yoga-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateY(-10rem);
+    z-index: 5; }
+    .yoga-container-content {
+      flex-basis: 60%;
+      word-wrap: wrap;
+      background-color: #fff;
+      box-shadow: 0 0 2rem 0.5rem #a7a5a563;
+      padding: 3rem; }
+      .yoga-container-content__top {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem; }
+      .yoga-container-content__bottom {
+        transform: translateY(-3rem); }
+      .yoga-container-content__image {
+        flex-basis: 70%;
+        transform: translateY(-10rem); }
+        .yoga-container-content__image-caption {
+          flex-basis: 30%; }
+  .yoga-img {
+    flex-basis: 30%;
+    transform: translateY(3rem); }
+
+.features {
+  min-height: 50vh;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+  padding: 10rem;
+  position: relative;
+  top: -16rem;
+  z-index: 7;
+  background-color: antiquewhite;
+  padding: 15rem 0 20rem 0;
+  background-image: linear-gradient(to right, #a75c69b7, #14143a7c, #14143a7c, #a80808b0), url(../img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black; }
+  .features__header {
+    text-align: center;
+    margin: 5rem 0;
+    color: #fff; }
+    .features__header .h3 {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .features__header p {
+      margin-top: 0;
+      font-weight: 900; }
+
+.workout__header {
+  text-align: center;
+  margin-bottom: 3rem; }

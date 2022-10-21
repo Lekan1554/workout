@@ -1,0 +1,23 @@
+.btn,
+a:link.btn,
+button.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  background-color: #14143a;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--round {
+    // border: none;
+    border-radius: .4rem;
+  }
+
+  &--outline-round {
+    border: 0.5rem solid red;
+  }
+}

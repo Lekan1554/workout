@@ -1,0 +1,53 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 1.5rem;
+  display: inline-block;
+  position: relative;
+  max-width: 30rem;
+  max-height: 30rem;
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    &-title {
+      color: inherit;
+      font-weight: 700;
+      color: #efefef;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    color: #d8d8d8e3;
+  }
+
+  &-img {
+    max-width: 30rem;
+    max-height: 30rem;
+    position: relative;
+
+    &__caption {
+      position: absolute;
+      bottom: 1rem;
+      text-align: center;
+      padding: 1rem 1rem;
+      background-color: #14143a;
+      color: white;
+      font-weight: 700;
+      width: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

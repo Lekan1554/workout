@@ -1,0 +1,16 @@
+{
+  "name": "practice-project",
+  "version": "1.0.0",
+  "description": "trying out my frontend skills",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss css/styles.css -w",
+    "concat": "concat -o css/output.css css/styles.css"
+  },
+  "author": "Lekan1554",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.3"
+  }
+}
