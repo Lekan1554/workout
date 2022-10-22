@@ -1,0 +1,135 @@
+/*  [HOME PAGE]  */
+
+.banner {
+  min-height: 80vh;
+  background-image: linear-gradient(to right, $bg-color-pry, $bg-color-pry),
+    url(../img/ban1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 2rem;
+  gap: 1.5rem;
+  position: relative;
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__caption {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    color: $white;
+
+    span.h3,
+    span.h1 {
+      display: block;
+      letter-spacing: 0.7rem;
+    }
+  }
+}
+
+.yoga {
+  min-height: 75vh;
+  padding: 3rem 0 15rem 0;
+  background-color: $white;
+  color: $black;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateY(-10rem);
+    z-index: 5;
+
+    &-content {
+      flex-basis: 60%;
+      word-wrap: wrap;
+      background-color: #fff;
+      box-shadow: 0 0 2rem 0.5rem #a7a5a563;
+      padding: 3rem;
+      text-align: justify;
+
+      &__top {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+
+      &__bottom {
+        transform: translateY(-3rem);
+      }
+
+      &__image {
+        flex-basis: 70%;
+        transform: translateY(-10rem);
+
+        &-caption {
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+
+  &-img {
+    flex-basis: 30%;
+    // align-self: flex-start;
+    transform: translateY(9rem);
+  }
+}
+
+.features {
+  min-height: 50vh;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+  padding: 10rem;
+  position: relative;
+  top: -16rem;
+  z-index: 7;
+  padding: 15rem 0 20rem 0;
+  background-image: linear-gradient(to right, $bg-color-pry, $bg-color-pry),
+    url(../img/wrk3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $black;
+
+  &__header {
+    text-align: center;
+    margin: 5rem 0;
+    color: #fff;
+
+    .h3 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+      font-weight: 900;
+    }
+  }
+}
+
+.workout {
+  padding-bottom: 15rem;
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: $black;
+  }
+}
+
+.footer {
+  min-width: 30vh;
+  background-color: $pry-color;
+}
