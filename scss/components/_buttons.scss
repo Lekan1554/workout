@@ -1,3 +1,5 @@
+/*  [BUTTONS AND LINKS]  */
+
 .btn,
 a:link.btn,
 button.btn {
@@ -6,7 +8,15 @@ button.btn {
   padding: 0.7rem 1.3rem;
   border: none;
   background-color: #14143a;
-  color: white;
+  color: $white;
+
+  &:hover {
+    background-color: #14143a;
+  }
+
+  &-link {
+    color: $sec-color;
+  }
 
   &:focus {
     outline: none;
@@ -14,10 +24,10 @@ button.btn {
 
   &--round {
     // border: none;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
   }
 
   &--outline-round {
-    border: 0.5rem solid red;
+    border: 0.5rem solid $sec-color;
   }
 }

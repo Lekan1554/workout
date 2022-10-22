@@ -1,6 +1,8 @@
+/*  [HOME PAGE]  */
+
 .banner {
   min-height: 80vh;
-  background-image: linear-gradient(to right, #a75c6871, #a8080870),
+  background-image: linear-gradient(to right, $bg-color-pry, $bg-color-pry),
     url(../img/ban1.jpg);
   background-size: cover;
   background-position: top;
@@ -10,6 +12,7 @@
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   width: 60%;
   padding: 2rem;
   gap: 1.5rem;
@@ -24,7 +27,7 @@
     width: 35%;
     position: absolute;
     left: 10%;
-    color: #d8d8d8e3;
+    color: $white;
 
     span.h3,
     span.h1 {
@@ -35,11 +38,10 @@
 }
 
 .yoga {
-  //   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  // background-color: antiquewhite;
   min-height: 75vh;
   padding: 3rem 0 15rem 0;
-  background-color: #efefef;
+  background-color: $white;
+  color: $black;
 
   &-container {
     display: flex;
@@ -54,6 +56,7 @@
       background-color: #fff;
       box-shadow: 0 0 2rem 0.5rem #a7a5a563;
       padding: 3rem;
+      text-align: justify;
 
       &__top {
         display: flex;
@@ -79,7 +82,7 @@
   &-img {
     flex-basis: 30%;
     // align-self: flex-start;
-    transform: translateY(3rem);
+    transform: translateY(9rem);
   }
 }
 
@@ -90,14 +93,13 @@
   position: relative;
   top: -16rem;
   z-index: 7;
-  background-color: antiquewhite;
   padding: 15rem 0 20rem 0;
-  background-image: linear-gradient(to right, #a75c69b7, #14143a7c, #14143a7c, #a80808b0),
-    url(../img/1.jpg);
+  background-image: linear-gradient(to right, $bg-color-pry, $bg-color-pry),
+    url(../img/wrk3.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: black;
+  color: $black;
 
   &__header {
     text-align: center;
@@ -116,9 +118,18 @@
   }
 }
 
-.workout{
-  &__header{
+.workout {
+  padding-bottom: 15rem;
+
+  &__header {
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 3rem;
+    color: $black;
   }
+}
+
+.footer {
+  min-width: 30vh;
+  background-color: $pry-color;
 }
