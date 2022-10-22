@@ -4,8 +4,8 @@
   "description": "trying out my frontend skills",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass scss/main.scss css/styles.css -w",
-    "concat": "concat -o css/output.css css/styles.css"
+    "compile": "node-sass assets/scss/main.scss assets/css/styles.css -w",
+    "concat": "concat -o assets/css/styles.css assets/css/style.css"
   },
   "author": "Lekan1554",
   "license": "ISC",
