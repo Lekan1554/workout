@@ -26,6 +26,16 @@ p {
   margin: 1.3rem 0;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+li {
+  padding: 1rem;
 }

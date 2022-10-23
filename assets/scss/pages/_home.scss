@@ -1,5 +1,4 @@
-/*  [HOME PAGE]  */
-
+/*  [BANNER LAYOUT]  */
 .banner {
   min-height: 80vh;
   background-image: linear-gradient(to right, $bg-color-pry, $bg-color-pry),
@@ -10,6 +9,7 @@
   z-index: 1;
 }
 
+/*  [BANNER COMPONENT]  */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +20,17 @@
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: $white;
+    font-weight: 700;
+
+    span {
+      display: inline-block;
+      margin: 0.3rem;
+
+      &:nth-child(2) {
+        transform: translateY(-0.5rem);
+      }
+    }
   }
 
   &__caption {
@@ -37,6 +47,7 @@
   }
 }
 
+/*  [YOGA LAYOUT]  */
 .yoga {
   min-height: 75vh;
   padding: 3rem 0 15rem 0;
@@ -86,6 +97,7 @@
   }
 }
 
+/*  [FEATURES LAYOUT]  */
 .features {
   min-height: 50vh;
   clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
@@ -118,6 +130,7 @@
   }
 }
 
+/*  [WORKOUT LAYOUT]  */
 .workout {
   padding-bottom: 15rem;
 
@@ -129,7 +142,29 @@
   }
 }
 
+/*  [FOOTER LAYOUT]  */
 .footer {
   min-width: 30vh;
   background-color: $pry-color;
+  color: $white;
+
+  .row {
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  &__about,
+  &__nav,
+  &__footer {
+    flex-basis: 30%;
+
+    p {
+      word-wrap: break-word;
+    }
+  }
+
+  &__header {
+    text-align: left;
+    padding: 1rem 0.6rem;
+  }
 }

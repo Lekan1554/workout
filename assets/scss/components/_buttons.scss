@@ -7,15 +7,15 @@ button.btn {
   text-decoration: none;
   padding: 0.7rem 1.3rem;
   border: none;
-  background-color: #14143a;
+  background-color: $pry-color;
   color: $white;
 
   &:hover {
-    background-color: #14143a;
+    background-color: $pry-color;
   }
 
   &-link {
-    color: $sec-color;
+    color: $pry-color;
   }
 
   &:focus {
@@ -28,6 +28,6 @@ button.btn {
   }
 
   &--outline-round {
-    border: 0.5rem solid $sec-color;
+    border: 0.5rem solid $pry-color;
   }
 }

@@ -33,8 +33,18 @@ p {
   margin: 1.3rem 0;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
+}
+ul a,
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  padding: 1rem;
 }
 
 /*  [UTILITIES]  */
@@ -43,19 +53,19 @@ ul {
 }
 
 .h1 {
-  font-size: 5rem;
-}
-
-.h2 {
   font-size: 4rem;
 }
 
+.h2 {
+  font-size: 3.5rem;
+}
+
 .h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .h5 {
@@ -86,7 +96,7 @@ button.btn:hover {
 .btn-link,
 a:link.btn-link,
 button.btn-link {
-  color: #a80808;
+  color: #14143a;
 }
 .btn:focus,
 a:link.btn:focus,
@@ -101,7 +111,7 @@ button.btn--round {
 .btn--outline-round,
 a:link.btn--outline-round,
 button.btn--outline-round {
-  border: 0.5rem solid #a80808;
+  border: 0.5rem solid #14143a;
 }
 
 /*  [CARD LAYOUT]  */
@@ -153,7 +163,7 @@ button.btn--outline-round {
   transform: translateX(-50%);
 }
 
-/*  [HOME PAGE]  */
+/*  [BANNER LAYOUT]  */
 .banner {
   min-height: 80vh;
   background-image: linear-gradient(to right, #14143a69, #14143a69),
@@ -164,6 +174,7 @@ button.btn--outline-round {
   z-index: 1;
 }
 
+/*  [BANNER COMPONENT]  */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +185,15 @@ button.btn--outline-round {
 }
 .nav__link {
   text-decoration: none;
-  color: black;
+  color: #d8d8d8e3;
+  font-weight: 700;
+}
+.nav__link span {
+  display: inline-block;
+  margin: 0.3rem;
+}
+.nav__link span:nth-child(2) {
+  transform: translateY(-0.5rem);
 }
 .nav__caption {
   width: 35%;
@@ -188,6 +207,7 @@ button.btn--outline-round {
   letter-spacing: 0.7rem;
 }
 
+/*  [YOGA LAYOUT]  */
 .yoga {
   min-height: 75vh;
   padding: 3rem 0 15rem 0;
@@ -229,6 +249,7 @@ button.btn--outline-round {
   transform: translateY(9rem);
 }
 
+/*  [FEATURES LAYOUT]  */
 .features {
   min-height: 50vh;
   clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
@@ -258,6 +279,7 @@ button.btn--outline-round {
   font-weight: 900;
 }
 
+/*  [WORKOUT LAYOUT]  */
 .workout {
   padding-bottom: 15rem;
 }
@@ -268,7 +290,27 @@ button.btn--outline-round {
   color: #272727ef;
 }
 
+/*  [FOOTER LAYOUT]  */
 .footer {
   min-width: 30vh;
   background-color: #14143a;
+  color: #d8d8d8e3;
+}
+.footer .row {
+  gap: 1rem;
+  align-items: flex-start;
+}
+.footer__about,
+.footer__nav,
+.footer__footer {
+  flex-basis: 30%;
+}
+.footer__about p,
+.footer__nav p,
+.footer__footer p {
+  word-wrap: break-word;
+}
+.footer__header {
+  text-align: left;
+  padding: 1rem 0.6rem;
 }
